@@ -22,8 +22,10 @@ function scoreCard(index){
         }
     }
 }
+console.time("ExecutionTime");
 lines.forEach((line, index) => {
     scoreCard(index)
     console.log("Done with card " + index)
 })
 console.log(totalCards)
+console.timeEnd("ExecutionTime");
